@@ -1,0 +1,140 @@
+.quote-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color:midnightblue;
+    padding-left: 15px;
+    width: 400px;
+}
+
+.main-content {
+    padding-left: 40px;
+}
+
+.quotes {
+    padding-left: 20px;
+}
+
+#quote-title {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: beige;
+}
+
+.kitty {
+    margin-top: 60px;
+}
+
+.kitty-image {
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+      
+}
+
+.kitty-description {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 460px;
+}
+
+.radio-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.radio-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #808080;
+    border-radius: 70%;
+    position: relative;
+    cursor: pointer;
+ 
+}
+
+.radio-input:checked::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.radio-label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #808080;
+    height: 100px;
+    margin-top: 50px;
+    
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: green;
+    order: 3;
+}
+
+.box2 {
+    background-color: blue;
+    order: 4;
+}
+
+.box3 {
+    background-color: blue;
+    order: 1;
+}
+
+.box4 {
+    background-color: red;
+    order: 2;
+}
+
+.heart{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.heart::before, .heart::after{
+    content: "";
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before{
+    top: -50px;
+    left: 0;
+}
+
+.heart::after{
+    left: 50px;
+    top: 0;
+}
