@@ -8,7 +8,7 @@ if (!isset($_GET['start_date']) || empty($_GET['start_date']) || !isset($_GET['e
 
 $start_date = $_GET['start_date'];
 $end_date = $_GET['end_date'];
-logRequest('date_range_search', $start_date, $end_date); // Додано логування
+logRequest('date_range_search', $start_date, $end_date); 
 
 try {
     $sqlSelect = "SELECT ID_FILM, name, date, country, director 

@@ -7,7 +7,7 @@ if (!isset($_GET['actor']) || empty($_GET['actor'])) {
 }
 
 $actor = $_GET['actor'];
-logRequest('actor_search', $actor); // Додано логування
+logRequest('actor_search', $actor); 
 
 
 try {

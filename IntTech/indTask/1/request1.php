@@ -29,7 +29,6 @@ try {
         echo "</thead>";
         echo "<tbody>";
         
-        // Fetch the results and display them
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             echo "<tr>";
             echo "<td>" . $row['ID_FILM'] . "</td>";

@@ -4,7 +4,6 @@ include("connect.php");
 $genre = $_GET['genre'];
 $format = $_GET['format'] ?? 'html';
 
-// Логування запиту
 if (isset($_GET['log_data'])) {
     $logData = json_decode($_GET['log_data'], true);
     $endpoint = basename($_SERVER['SCRIPT_NAME']);

@@ -1,14 +1,11 @@
 <?php
-// Файл для роботи з логами в SQLite
 function getLogDB() {
     $logDbPath = __DIR__ . '/logs.db';
     
     try {
-        // Створюємо базу даних, якщо її немає
         $logDb = new PDO('sqlite:' . $logDbPath);
         $logDb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
-        // Створюємо таблицю для логів, якщо її немає
         $logDb->exec("CREATE TABLE IF NOT EXISTS request_logs (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             request_type TEXT NOT NULL,
@@ -19,7 +16,6 @@ function getLogDB() {
         
         return $logDb;
     } catch(PDOException $e) {
-        // У виробничому середовищі краще писати в файл логу, а не виводити на екран
         error_log("SQLite Error: " . $e->getMessage());
         return null;
     }
